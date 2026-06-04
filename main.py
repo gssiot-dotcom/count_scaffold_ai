@@ -6,7 +6,7 @@ import os
 
 app = FastAPI()
 
-MODEL_PATH = "best1.pt"
+MODEL_PATH = "/models/best1.pt"
 model = YOLO(MODEL_PATH)
 
 @app.post("/detect")
